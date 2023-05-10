@@ -109,7 +109,7 @@ const RoomDropdown = styled(Dropdown)`
 
 const BookingForm = () => {
   const [tower, setTower] = useState('a');
-  const [floor, setFloor] = useState('1');
+  const [floor, setFloor] = useState('3');
   const [room, setRoom] = useState('1');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
@@ -171,9 +171,9 @@ const BookingForm = () => {
     { label: 'Башня Б', value: 'b' },
   ];
 
-  const floorOptions = Array.from({ length: 27 }, (_, i) => ({
-    label: `Этаж ${i + 1}`,
-    value: `${i + 1}`,
+  const floorOptions = Array.from({ length: 25 }, (_, i) => ({
+    label: `Этаж ${i + 3}`,
+    value: `${i + 3}`,
   }));
 
   const roomOptions = Array.from({ length: 10 }, (_, i) => ({
